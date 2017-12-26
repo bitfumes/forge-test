@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('forge',function(){
 	return 'Working fine';
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
